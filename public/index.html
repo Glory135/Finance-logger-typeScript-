@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Loggers</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h2>Finance Logger</h2>
+      </header>
+
+      <div class="list_container">
+        <ul id="ul"></ul>
+      </div>
+
+      <div class="forn_container">
+        <form id="form">
+          <label>
+            Type:
+            <select id="type" name="type">
+              <option value="invoice">---Select Type---</option>
+              <option value="Invoice">Invoice</option>
+              <option value="Payment">Payment</option>
+            </select>
+          </label>
+          <label>
+            To / form:
+            <input id="toFrom" type="text" />
+          </label>
+          <label>
+            Details:
+            <input id="details" type="text" />
+          </label>
+          <label>
+            Amount($):
+            <input id="amount" type="number" />
+          </label>
+          <button>Add</button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
